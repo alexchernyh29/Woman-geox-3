@@ -1,0 +1,15 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/result/result
+include /blocks/sharing/sharing
+include /blocks/test/test
+include /blocks/geox/geox
+
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+geox()
+
+

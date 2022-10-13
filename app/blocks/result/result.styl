@@ -1,0 +1,126 @@
+.result
+    position relative
+
+    &__content 
+        text-align center
+
+    &__text
+        background-color $c-white-1
+        padding w(40) w(155) w(45)
+        margin 0 auto
+        max-width w(1164)
+        +below(600px)
+            width 100%
+            background-color $c-white
+            padding wm(25) 0 0
+
+    &__chapter
+        font-family $ff-bodoni
+        text-transform uppercase
+        font-weight 400
+        font-size w(40)
+        color #FF7B31
+        line-height w(50)
+        +below(600px)
+            font-size wm(27)
+            line-height 125%
+
+    &__description
+        font-family $ff-montserrat
+        font-weight 400
+        font-size w(16)
+        line-height w(25)
+        padding w(30) 0 w(10)
+        margin 0 auto
+        width w(840)
+        +below(600px)
+            font-size wm(10)
+            line-height wm(15)
+            padding wm(15) wm(30) wm(20)
+            width 100%
+
+    &__highlight
+        +below(600px)
+            padding wm(20) wm(20) wm(90)
+            background-color $c-white-1
+    
+    &__advice
+        margin 0 auto
+        width w(840)
+        border 2px solid $c-green
+        font-family $ff-montserrat
+        font-weight 400
+        font-size w(16)
+        line-height w(25)
+        padding  w(25) w(40) w(30)
+        span
+           font-weight 700
+        +below(600px)
+            font-size wm(11)
+            line-height wm(17)
+            width 100%
+            padding wm(20) wm(20) wm(25)
+   
+    &__images_left
+        width w(300)
+        img
+            width 100%
+
+
+    &__footer
+        position relative
+        top w(-25)
+        +below(600px)
+            top 0
+            padding 0 wm(20) wm(215)
+    
+    &__images
+        margin 0 auto
+        width w(840)
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items center
+
+        +below(600px)
+            width 100%
+            position absolute
+            bottom 100%
+            left 0
+            padding wm(5)
+
+        img
+            width w(260)
+
+            +below(600px)
+                width wm(130)
+    
+    &__sharing
+        position absolute
+        top 0
+        left 50%
+        transform translateX(-50%)
+        +below(600px)
+            top wm(30)
+    
+    &__button
+        position absolute
+        top w(85)
+        left 50%
+        transform translateX(-50%)
+        padding w(15) w(30)
+        text-transform uppercase
+        font-family $ff-bodoni
+        background $c-green
+        border-radius 9px
+        color $c-white
+        font-size w(20)
+        line-height 122%
+        &:hover
+            opacity .7
+        +below(600px)
+            top auto
+            bottom wm(45)
+            min-width wm(260)
+            font-size wm(20)
+            padding wm(15) wm(30)

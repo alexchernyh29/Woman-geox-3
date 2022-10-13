@@ -1,0 +1,41 @@
+.header 
+    position relative
+    margin 0 auto
+    padding-bottom w(75)
+    +below(600px)
+        display none
+
+    &::after
+        content ''
+        position absolute
+        bottom 0
+        left 50%
+        transform translateX(-50%)
+        background-color $c-green
+        width w(470)
+        height w(3)
+
+    &__content 
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        text-align center
+        
+    &__chapter
+        font-family $ff-bodoni
+        text-transform uppercase
+        padding-top w(40)
+        font-weight 400
+        font-size w(40)
+        line-height w(50)
+        color $c-green
+
+    &__text
+        position relative
+        font-family $ff-montserrat
+        margin-top w(50)
+        font-weight 400
+        font-size w(16)
+        line-height w(25)
+        width w(926)

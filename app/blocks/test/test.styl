@@ -1,0 +1,186 @@
+.test
+    position relative
+    margin 0 auto
+    padding-bottom w(70)
+    background-color $c-white
+    +below(600px)
+        padding-bottom wm(30)
+
+    &__wrap
+        display flex
+        flex-direction column
+        justify-content center
+        +below(600px)
+            padding-top wm(35)
+
+    &__line
+        width w(470)
+        height w(3)
+        background $c-green
+        align-self center
+        +below(600px)
+            display none
+
+    &__counter
+        font-family $ff-bodoni
+        font-style normal
+        font-weight 400
+        font-size w(40)
+        line-height w(50)
+        text-align center
+        letter-spacing 0.07em
+        text-transform uppercase
+        color $c-green
+        +below(600px)
+            font-size wm(40)
+            line-height wm(50)
+
+    &__list
+        padding-top w(20)
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        +below(600px)
+            padding-top wm(15)
+
+    &__scroll
+        width w(10)
+        height w(10)
+        border-top w(1) solid $c-green
+        border-right w(1) solid $c-green
+        margin-right w(10)
+        transform rotate(45deg)
+        &:first-child
+            transform rotate(-135deg)
+        &:last-child
+            margin-left w(25)
+        +below(600px)
+            width wm(10)
+            height wm(10)
+            border-top wm(1) solid $c-green
+            border-right wm(1) solid $c-green
+            margin-right wm(10)
+
+    &__circle
+        margin-left w(10)
+        width w(15)
+        height w(15)
+        background $c-grey
+        border-radius 50%
+        &:last-child
+            margin-right w(25)
+        &.is-active
+            background $c-green
+        +below(600px)
+            margin-left wm(10)
+            width wm(15)
+            height wm(15)
+
+    &__title
+        padding-top w(35)
+        font-family $ff-montserrat
+        font-style normal
+        font-weight 400
+        font-size w(16)
+        line-height w(24)
+        text-align center
+        min-height w(140)
+        color $c-black
+        max-width w(580)
+        margin 0 auto
+        +below(600px)
+            max-width 94%
+            font-size wm(16)
+            line-height wm(20)
+            padding-top wm(25)
+            min-height auto
+
+    &__answers
+        padding-top w(70)
+        display flex
+        flex-direction row
+        justify-content center
+        +below(600px)
+            padding-top wm(10)
+            flex-direction column
+            align-content center
+
+    &__card
+        display flex
+        flex-direction column
+        justify-content space-between
+        align-items center
+        padding-left w(120)
+        &:first-child
+            padding-left w(0)
+        +below(600px)
+            padding-top wm(20)
+            padding-left wm(0)
+            align-items center
+
+    &__image-bg
+        width w(240)
+        height w(240)
+        border-radius 50%
+        background-color $c-grey-1
+        margin-top w(10)
+        +below(600px)
+            margin-top wm(1)
+            width wm(95)
+            height wm(95)
+
+    &__image
+        position absolute
+        margin-top w(0)
+        img
+            width 100%
+            max-width w(250)
+            max-height w(300)
+        +below(600px)
+            width wm(80)
+            img
+                width 100%
+                max-width wm(120)
+                max-height wm(120)
+
+    &__btn
+        margin-top w(80)
+        width w(209)
+        background $c-green
+        border-radius w(9)
+        color $c-white
+        font-family $ff-bodoni
+        font-style normal
+        font-weight 400
+        font-size w(12)
+        line-height w(15)
+        text-align center
+        padding w(20) w(5)
+        letter-spacing 0.07em
+        text-transform uppercase
+        &:hover
+            opacity .7
+        +below(600px)
+            margin-top wm(20)
+            width wm(185)
+            border-radius wm(9)
+            font-size wm(13)
+            line-height wm(16)
+            padding wm(10) wm(5)
+
+    &__brand
+        padding-top w(50)
+        font-family $ff-montserrat
+        font-style normal
+        font-weight 400
+        font-size w(13)
+        line-height w(20)
+        text-align center
+        color $c-grey-2
+        +below(600px)
+            padding-top wm(20)
+            font-size wm(10)
+            line-height wm(15)
+            width wm(250)
+            margin 0 auto

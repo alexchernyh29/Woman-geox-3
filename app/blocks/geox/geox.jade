@@ -1,0 +1,18 @@
+mixin geox()
+
+    +b('section').geox
+        +header()
+        +e.content
+            +test()
+            +result()
+            +e.images
+                +e.image._circlebig
+                    img(src='/images/left-bg_circlebig.png')
+                +e.image._circlesmall
+                    img(src='/images/left-bg_circlesmall.png')
+                +e.image._right-bg
+                    img(src='/images/right-bg.png')
+                +e.image._left-leaf
+                    img(src='/images/left-leaf.png')
+                +e.image._right-leaf
+                    img(src='/images/right-leaf.png')

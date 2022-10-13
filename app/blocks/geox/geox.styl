@@ -1,0 +1,77 @@
+.geox
+    border-bottom 3px solid $c-green
+    .test
+        display block
+    .result
+        display none
+
+    &.show-result
+        .test
+            display none
+        .result
+            display block
+        .geox__image
+            &_circlebig
+                top w(45)
+                left w(0)
+                
+
+            &_circlesmall
+                top w(230)
+                left w(175)
+                
+
+            &_right-bg
+                top w(125)
+                right w(0)
+                
+
+            &_left-leaf
+                top w(305)
+                left w(0)
+                
+
+            &_right-leaf
+                top w(350)
+                right w(42)
+                
+    &__content
+        position relative
+        padding w(85) 0 0
+        +below(600px)
+            padding wm(40) 0 0 
+
+    &__images
+        +below(600px)
+            display none
+    
+    &__image
+        position absolute
+
+        img
+            width 100%
+
+        &_circlebig
+            top w(0)
+            left 0
+            width w(160)
+
+        &_circlesmall
+            top w(160)
+            left w(230)
+            width w(55)
+
+        &_right-bg
+            top w(-60)
+            right 0
+            width w(215)
+
+        &_left-leaf
+            top w(95)
+            left 0
+            width w(205)
+
+        &_right-leaf
+            top w(90)
+            right w(30)
+            width w(225)

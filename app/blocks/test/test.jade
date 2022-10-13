@@ -1,0 +1,34 @@
+mixin test()
+
+    +b('section').test()
+        +e.content
+            +e.wrap
+                +e('p').counter <span>1</span>/7
+                +e.list
+                    +e.scroll
+                    +e.circle.is-active
+                    +e.circle
+                    +e.circle
+                    +e.circle
+                    +e.circle
+                    +e.circle
+                    +e.circle
+                    +e.scroll
+                +e('p').title Представьте, что вам нужно пополнить гардероб трендовой вещью.<br>Какой тренд вы выберете?
+            +e.answers
+                +e.card
+                    +e.image-bg
+                    +e.image
+                        img(src='/images/test-image-1-1.png')
+                    +e('button').btn(data-id='А') Минималистичный стиль
+                +e.card
+                    +e.image-bg
+                    +e.image
+                        img(src='/images/test-image-1-2.png')
+                    +e('button').btn(data-id='Б') Яркий принт
+                +e.card
+                    +e.image-bg
+                    +e.image
+                        img(src='/images/test-image-1-3.png')
+                    +e('button').btn(data-id='В') Необычный крой
+            +e.brand Вся обувь и верхняя одежда в тесте представлена брендом Geox
